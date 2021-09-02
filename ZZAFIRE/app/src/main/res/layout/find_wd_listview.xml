@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="Name"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/text_rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="#a574ff"
+        android:text="rssi"
+        android:layout_below="@+id/text_name" />
+
+    <TextView
+        android:id="@+id/text_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toStartOf="@+id/btn_connect"
+        android:text="비연결" />
+
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:text="연결"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+   />
+
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7dp"
+        android:text="TextView"
+        android:layout_toRightOf="@id/text_name"
+        android:layout_toLeftOf="@id/text_connect"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/data_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="noData"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/text_rssi"
+        android:layout_below="@+id/text_name"/>
+
+</RelativeLayout>

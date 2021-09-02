@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.superdroid.test.zzafire.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_data"
+        android:layout_alignEnd="@+id/btn_wd" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임 \n관리"
+        android:onClick="mOnClick_Rename"
+        android:background="@android:color/holo_orange_light"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp" />
+
+    <Button
+        android:id="@+id/btn_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="데이터\n보기"
+        android:layout_below="@+id/btn_profile"
+        android:layout_alignTop="@+id/btn_profile"
+        android:layout_toStartOf="@+id/btn_profile"
+        android:onClick="mOnClick_Data"
+        android:background="@android:color/holo_orange_light"/>
+
+    <Button
+        android:id="@+id/btn_wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WD기기\n연결"
+        android:layout_alignBaseline="@+id/btn_data"
+        android:layout_alignBottom="@+id/btn_data"
+        android:layout_toEndOf="@+id/btn_profile"
+        android:onClick="mOnClick_WD"
+        android:background="@android:color/holo_orange_light"/>
+
+
+</RelativeLayout>
